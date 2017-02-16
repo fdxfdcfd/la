@@ -12,4 +12,7 @@ class ArticlesController extends Controller
         $articles= Articles::all();
         return view("pages.articles")->with("articles", $articles);
     }
+    public function create(){
+         return view("create");
+    }
 }

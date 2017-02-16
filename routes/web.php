@@ -21,3 +21,5 @@ Route::get('/contact', 'HomeController@contact');
 Route::get('/about', 'HomeController@about');
 
 Route::get('/articles', 'ArticlesController@index');
+	
+Route::get('/articles/create', 'ArticlesController@create');
