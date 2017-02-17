@@ -23,3 +23,9 @@ Route::get('/about', 'HomeController@about');
 Route::get('/articles', 'ArticlesController@index');
 	
 Route::get('/articles/create', 'ArticlesController@create');
+
+
+Route::get('/usercontroller/path',[
+   'middleware' => 'First',
+   'uses' => 'UserController@showPath'
+]);
